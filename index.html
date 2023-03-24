@@ -1,63 +1,106 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Heartlys - Place Your Company Name Here</title>
-<link href="css/stylesheet.css" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="main.js" defer></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <title>My Site</title>
 </head>
-
 <body>
-<div id="top_bar_black"> <div id="logo_container"> <div id="logo_image"> </div>  <div id="nav_block"> <div class="nav_button">Home </a></div>
-	  <div class="nav_button"> Contact</div>
-		<div class="nav_button"> About</div>
-		<div class="nav_button"> Links</div>
-		<div class="nav_button"> Services </div>
-	  </div>
-</div> </div>
-        <div id="content_container">
-       	  <div id="header"> <div class="header_content_mainline"> Moving Your Business Forward </div> <div id="header_content_tagline">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut   </div>
-          
-          
-</div>
-           
-                 <div id="header_lower">  <div id="header_content_boxline">About Us <div id="header_content_boxcontent">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-
-Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-
- </div></div> 
-          </div><div id="header_lower">  
-            <div id="header_content_boxline">Clients</div> 
-          <div id="header_content_boxcontent">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-
-Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</div>
-          
-          </div>     
+    <header>
+        <div class="header-container">
+            <div class="logo"><img src="img/logo.png"/></div>
+<!--            <div class="logo">@Pomi4nyk_bot</div>-->
+            <a href="#about"><div class="header-item">About</div></a>
+            <a href="#features"><div class="header-item">Features</div></a>
+            <a href="#subscribe"><div class="header-item">Subscribe</div></a>
+            <a target="_blank" href="https://t.me/Pomi4nyk_bot"><div class="header-item">Open BOT</div></a>
         </div>
-        
-        
-        
-<div id="bottom_bar_black"> <div id="main_container">
-	<div id="header_lower">  <div id="header_content_lowerline">Contact
-	    <div id="header_content_lowerboxcontent">148 Blackways Street<br />
-	      Hargary<br />
-	      Lingvillage<br />
-        HG43 9HA <BR />
-        info@domainhappy.com<br />
-        www.domainhappy.com<br />
-        01982 698 621<BR /> 
+    </header>
+    <div class="content">
+        <div id="about">
+            <div class="about-item odd">
+                <div class="about-photo"><img src="img/robot1.png"/></div>
+                <div class="about-text">Ласкаво просимо до боту для отримання курсу валют, Bitcoin, Ethereum та багатьох інших криптовалют!<br><br>
+                    Наш бот дозволить вам швидко та зручно дізнатися поточний курс більш ніж 1000 валют та криптовалют. Просто введіть назву валюти або тікер криптовалюти, і ми надамо вам актуальну інформацію.<br><br>
+                    Наш бот пропонує такі функції:<br><br>
+                    Отримання актуального курсу валют за допомогою запиту за назвою валюти або тікером криптовалюти<br><br>
+                    Отримання історичних даних курсу валют за останні 30 днів<br><br>
+                    Отримання сповіщень про зміни курсу валют та криптовалют<br><br>
+                    Конвертування валют за поточним курсом<br><br>
+                    Наш бот працює з десятками бірж та агрегаторів курсів, щоб забезпечити вам точну та свіжу інформацію.<br><br>
+                    Бот простий та інтуїтивно зрозумілий у використанні, а його інтерфейс розроблений так, щоб забезпечити максимальний комфорт користувача. Завдяки нашому боту, вам більше не потрібно шукати актуальний курс валют та криптовалют в Інтернеті - ми зробимо це за вас!<br><br>
+                    Не гайте часу і додайте нашого бота до своєї улюбленої платформи чат-ботів. Отримуйте свіжу та актуальну інформацію про курси валют та криптовалют в будь-який момент часу!<br><br></div>
+            </div>
+            <div id="features" class="about-item even">
+                <div class="about-text">Звичайно, залежно від того, які функції буде використовувати користувач, він може отримати декілька вигод від використання боту для отримання курсу валют, Bitcoin, Ethereum та інших криптовалют. Ось кілька можливих переваг:<br><br>
+                    Швидкий та легкий доступ до актуальної інформації про курси валют та криптовалют. Замість того, щоб витрачати час на пошук актуальної інформації на різних веб-сайтах, користувач може просто звернутися до боту, щоб отримати потрібну інформацію зручним для нього способом.<br><br>
+                    Отримання історичних даних. Бот може надати користувачу інформацію про курси валют та криптовалют за останні 30 днів, що дозволяє зробити прогнози та зрозуміти, які тенденції переважають на ринку.<br><br>
+                    Сповіщення про зміни курсу. Користувач може налаштувати бота на отримання сповіщень про зміни курсу певної валюти або криптовалюти. Це дозволяє бути завжди в курсі останніх змін на ринку та вчасно реагувати на них.<br><br>
+                    Конвертування валют за поточним курсом. Бот дозволяє зручно та швидко конвертувати валюти за поточним курсом, що зручно для людей, які займаються міжнародними переказами або мають ділові контакти з іншими країнами.<br><br>
+                    Загалом, використання боту для отримання курсу валют та криптовалют може зекономити час та забезпечити користувачеві зручний доступ до актуальної та важливої інформації.<br><br></div>
+                <div class="about-photo"><img src="img/robot2.png"/></div>
+            </div>
+            <div class="about-item odd">
+                <div class="about-photo"><img src="img/robot3.png"/></div>
+                <div class="about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+            </div>
         </div>
-	</div> 
-          </div>
-          
-          <div id="header_lower">  <div id="header_content_lowerline">Clients
-            <div id="header_content_lowerboxcontent">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est </div>
-	</div> 
-          </div>
 
 
-</div> 
+
+<!--        <hr>-->
+<!--        <div id="features">-->
+<!--            <div class="feature">-->
+<!--                <h2 id="feature-title">title</h2>-->
+<!--                <img id="feature-image" src="">-->
+<!--                <p id="feature-description">description</p>-->
+<!--            </div>-->
+<!--            <div class="feature-paginator">-->
+<!--                <button id="left">⬅️</button>-->
+<!--                <button id="right">➡️</button>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <hr>-->
+        <div >
+            <div class="subscribe-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+            <div class="subscribe-form">
+                <form id="subscribe" name="robot-form" action="/register" method="POST">
+                    <input name="first-name" type="text" placeholder="First Name">
+                    <input name="email" type="email" placeholder="Email" >
+                    <input name="password" type="password" placeholder="Password">
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <!-- Модальное окно №1 -->
+<a href="#x" class="overlay" id="win1"></a>
+<div class="popup">
+Ми використовуємо файли cookie для збору інформації про відвідувачів нашого сайту. Ця інформація допомагає нам поліпшити наш сайт і зрозуміти, як відвідувачі взаємодіють зі сторінками.
+
+Ми використовуємо файли cookie для збору інформації про ваші переваги та інтереси, щоб зробити наш сайт більш персоналізованим. Ця інформація може бути використана для показу вам реклами, яка відповідає вашим інтересам.
+
+Ми не дозволимо стороннім компаніям використовувати файли cookie на нашому сайті для збору даних про відвідувачів.
+
+Ви можете відмовитися від використання файлів cookie, відключивши їх у налаштуваннях свого браузера. Проте, це може призвести до обмеження деяких функцій нашого сайту.
+
+Продовжуючи використовувати наш сайт, ви погоджуєтесь з нашою політикою використання файлів cookie.
+<a class="close"title="Закрыть" href="#close"></a>
 </div>
- <div id="copywriteblock"> Designed by <a href="http://www.pixelateddesign.co.uk/">www.pixelateddesign.co.uk </a></div>
 
+        <hr>
+        <div class="footer-container">
+            <div class="footer-item">2023 @Sosnovskyi</div>
+            <div class="footer-item"><a target="_blank" href="https://www.linkedin.com/in/vasylsosnovskyi/">LinkedIn</a></div>
+            <div class="footer-item"><a target="_blank" href="https://github.com/VasylSosnovskyi">GitHub</a></div>
+            <div class="footer-item"><a target="_blank" href="#win1">Cookie Policy</a></div>
+
+
+
+        </div>
+    </footer>
 </body>
 </html>

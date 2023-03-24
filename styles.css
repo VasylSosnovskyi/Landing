@@ -1,0 +1,400 @@
+body {
+    background-color: #f3f2ef;
+    margin: 0;
+    font-family: monospace, sans-serif;
+}
+
+/* header styles */
+
+.header-container {
+    background: #a67f52;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr 5fr;
+    height: 60px;
+    align-items: center;
+}
+
+.logo {
+    margin-left: 20px;
+    font-size: 25px;
+}
+.logo > img {
+    border-radius: 20px;
+    height: 60px;
+}
+
+.header-item {
+    height: 100%;
+    width: 100%;
+    line-height: 42px;
+    text-align: center;
+    border-radius: 25px;
+    border: 1px solid #dbdbdb;
+    margin: 10px;
+}
+
+.header-item:hover {
+    cursor: pointer;
+    background: #ffe0b6;
+}
+
+.header-container > a {
+    text-decoration: none;
+    color: black;
+}
+
+/* content styles */
+
+.content {
+    margin: 10px;
+}
+
+
+/* about styles */
+
+#about {
+
+}
+
+.about-item {
+    display: grid;
+}
+
+.odd {
+    grid-template-columns: 2fr 4fr;
+}
+
+.even {
+    grid-template-columns: 4fr 2fr;
+}
+
+.about-text {
+    text-align: justify;
+    margin: 10px;
+    border: 1px solid #dbdbdb;
+          border-radius: 20px;
+          padding: 20px;
+          width: 80%;
+          background-color: white;
+}
+
+.about-photo > img {
+    width: 75%;
+    border-radius: 50px;
+    margin: 20px;
+
+}
+
+/* features styles*/
+
+#feature {
+    padding-top: 42px;
+    display: grid;
+    grid-template-rows: 500px 50px;
+}
+
+.feature-paginator {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+}
+
+.feature-paginator button {
+    border: none;
+    background: #f5bca5;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+.feature {
+    display: grid;
+    grid-template-rows: 50px 350px 100px;
+    align-items: center;
+    justify-items: center;
+}
+.feature img {
+    max-height: 70%;
+}
+
+
+/* subs styles */
+.subscribe-text {
+    width: 60%;
+    margin: auto;
+    text-align: justify;
+}
+
+.subscribe-form {
+    margin-top: 20px;
+}
+
+form {
+    display: grid;
+    grid-template-rows: repeat(4, 40px);
+    grid-row-gap: 10px;
+    width: 500px;
+    margin: auto;
+}
+
+input, select {
+    height: 35px;
+    border: none;
+    border-radius: 15px;
+    font-size: 15px;
+    padding-left: 15px;
+}
+
+#submit-form {
+    height: 40px;
+    background: chocolate;
+    border: none;
+    border-radius: 15px;
+}
+#submit-form:hover {
+    cursor: pointer;
+    opacity: 80%;
+}
+
+
+/* footer styles */
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: 50px;
+    align-items: center;
+}
+
+.footer-item {
+    text-align: center;
+}
+
+.footer-item > a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer-item > a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* Базовые стили слоя, затемнения и модального окна */
+2
+.overlay {
+3
+top: 0;
+4
+right: 0;
+5
+bottom: 0;
+6
+left: 0;
+7
+z-index: 10;
+8
+display: none;
+9
+/* фон затемнения */
+10
+background-color: rgba(0, 0, 0, 0.65);
+11
+position: fixed; /* фиксированное позиционирование */
+12
+cursor: default; /* тип курсора */
+13
+}
+14
+
+15
+/* активируем слой затемнения */
+16
+.overlay:target {
+17
+display: block;
+18
+}
+19
+
+20
+/* стили модального окна */
+21
+.popup {
+22
+top: -100%;
+23
+right: 0;
+24
+left: 50%;
+25
+font-size: 14px;
+26
+z-index: 20;
+27
+margin: 0;
+28
+width: 85%;
+29
+min-width: 320px;
+30
+max-width: 600px;
+31
+/* фиксированное позиционирование, окно стабильно при прокрутке */
+32
+position: fixed;
+33
+padding: 15px;
+34
+border: 1px solid #383838;
+35
+background: #fefefe;
+36
+/* скругление углов */
+37
+-webkit-border-radius: 4px;
+38
+-moz-border-radius: 4px;
+39
+-ms-border-radius: 4px;
+40
+border-radius: 4px;
+41
+font: 14px/18px 'Tahoma', Arial, sans-serif;
+42
+/* внешняя тень */
+43
+-webkit-box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
+44
+-moz-box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
+45
+-ms-box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
+46
+box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
+47
+-webkit-transform: translate(-50%, -500%);
+48
+-ms-transform: translate(-50%, -500%);
+49
+-o-transform: translate(-50%, -500%);
+50
+transform: translate(-50%, -500%);
+51
+-webkit-transition: -webkit-transform 0.6s ease-out;
+52
+-moz-transition: -moz-transform 0.6s ease-out;
+53
+-o-transition: -o-transform 0.6s ease-out;
+54
+transition: transform 0.6s ease-out;
+55
+}
+56
+
+57
+/* активируем модальный блок */
+58
+.overlay:target+.popup {
+59
+-webkit-transform: translate(-50%, 0);
+60
+-ms-transform: translate(-50%, 0);
+61
+-o-transform: translate(-50%, 0);
+62
+transform: translate(-50%, 0);
+63
+top: 20%;
+64
+}
+65
+
+66
+/* формируем кнопку закрытия */
+67
+.close {
+68
+top: -10px;
+69
+right: -10px;
+70
+width: 20px;
+71
+height: 20px;
+72
+position: absolute;
+73
+padding: 0;
+74
+border: 2px solid #ccc;
+75
+-webkit-border-radius: 15px;
+76
+-moz-border-radius: 15px;
+77
+-ms-border-radius: 15px;
+78
+-o-border-radius: 15px;
+79
+border-radius: 15px;
+80
+background-color: rgba(61, 61, 61, 0.8);
+81
+-webkit-box-shadow: 0px 0px 10px #000;
+82
+-moz-box-shadow: 0px 0px 10px #000;
+83
+box-shadow: 0px 0px 10px #000;
+84
+text-align: center;
+85
+text-decoration: none;
+86
+font: 13px/20px 'Tahoma', Arial, sans-serif;
+87
+font-weight: bold;
+88
+-webkit-transition: all ease .8s;
+89
+-moz-transition: all ease .8s;
+90
+-ms-transition: all ease .8s;
+91
+-o-transition: all ease .8s;
+92
+transition: all ease .8s;
+93
+}
+94
+
+95
+.close:before {
+96
+color: rgba(255, 255, 255, 0.9);
+97
+content: "X";
+98
+text-shadow: 0 -1px rgba(0, 0, 0, 0.9);
+99
+font-size: 12px;
+100
+}
+101
+
+102
+.close:hover {
+103
+background-color: rgba(252, 20, 0, 0.8);
+104
+-webkit-transform: rotate(360deg);
+105
+-moz-transform: rotate(360deg);
+106
+-ms-transform: rotate(360deg);
+107
+-o-transform: rotate(360deg);
+108
+transform: rotate(360deg);
+109
+}
